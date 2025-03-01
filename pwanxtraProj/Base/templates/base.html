@@ -1,0 +1,35 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head -->
+{% include 'partials/head.html' %}
+<!-- head     -->
+<body>
+        <!-- Start Navbar Area --> 
+        {% include 'partials/navbar.html' %}
+        <!-- End  Navbar Area -->
+
+        
+
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+        <!-- Start footer area -->
+       {% include 'partials/footer.html' %}
+        <!-- End footer area -->
+
+        <!-- Start Copyright Area -->
+         {% include 'partials/footer.html' %}
+        <!-- Start Copyright Area -->
+
+        <!-- Start Go Top Area -->
+        {% include 'partials/goto_top.html' %}
+        <!-- End Go Top Area -->
+
+        <!-- Link off Js Fill -->
+ 
+        {% include 'partials/scripts.html' %}
+        
+    </body>
+</html>

@@ -1,0 +1,149 @@
+{% extends 'base.html' %}
+{% load static %}
+        <!-- Start Navbar Area --> 
+
+        <!-- End  Navbar Area -->
+
+
+{% block content %}
+        <!-- Start Page Banner Area -->
+        <div class="page-banner-area"> 
+            <div class="container-fluid">
+                <div class="page-banner-content"> 
+                    <h1>Contact Us</h1>
+                    <p><a href="index.html">Home</a>Contact Us</p>  
+                </div> 
+            </div>
+        </div>
+        <!-- End Page Banner Area -->
+
+        <!-- Start Contact Area -->
+        <div class="contact-area pt-100 pb-70">
+            <div class="container">
+                <div class="section-title center-title">
+                    <span class="top-title">CONTACT US</span> 
+                    <h2>Our Address</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="contact-card">
+                            <i class="flaticon-telephone"></i> 
+                            <h3>Call for help:</h3> 
+                            <p>Phone:<a href="tel:+089027392793">+089027392793</a></p>
+                            <p>Fax:<a href="tel:(843)971-1906">(843) 971-1906</a></p> 
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="contact-card"> 
+                            <i class="flaticon-envelope"></i>
+                            <h3>Mail for information:</h3>  
+                            <p>Support: <a href="mailto:info@pwanxtra.com">info@pwanxtra.com</span></a></p>
+                            <p>Business: <a href="mailto:Pwanxtra@gmail.com ">Pwanxtra@gmail.com </span></a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="contact-card">
+                            <i class="flaticon-placeholder"></i> 
+                            <h3>Head office address:</h3>  
+                            <p>Km 42, Lekki-Epe Express Way, Alfa Bus Stop, Sangotedo, Et-Osa LGA, Lagos. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Contact Area -->
+
+        <!-- contact group -->
+        <div class="contact-group pb-100"> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="maps"> 
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253694.64354971907!2d3.2391185922506045!3d6.524359966998249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c5555555555%3A0xef880d29145a7c25!2sProperty%20World%20Africa%20Network!5e0!3m2!1sen!2sng!4v1679919269003!5m2!1sen!2sng" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact-group-from">
+                            <div class="section-title left-title">
+                                <h2>Ready to Get Started?</h2>  
+                            </div>
+                            <form id="contact" method="POST" action="{% url 'contact' %}">
+                                {% csrf_token %} 
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" name="name" id="name" class="form-control" placeholder="Name*" required data-error="Please enter your name">
+                                            <div class="help-block with-errors"></div> 
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-md-6">  
+                                        <div class="form-group">
+                                            <input type="text" name="phone" id="phone_number" placeholder="Phone*" required data-error="Please enter your number" class="form-control">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div> 
+                    
+                                    <div class="col-lg-12 col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" name="email" id="email" class="form-control" placeholder="Email*" required data-error="Please enter your email">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="col-lg-12 col-md-6">  
+                                        <div class="form-group">
+                                            <input type="text" name="subject" id="phone_numbertwo" placeholder="Subject*" required data-error="Please enter your subject" class="form-control">
+                                            <div class="help-block with-errors"></div> 
+                                        </div>
+                                    </div> 
+                    
+                                    <div class="col-12">
+                                        <div class="form-group"> 
+                                            <textarea name="message" class="form-control" id="message" cols="30" rows="5" placeholder="Message*" required data-error="Write your message"></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="col-lg-12 col-md-12">
+                                        <button id="submitBtn" type="submit" class="default-btn contact">    
+                                            <span id="btnText" >Send Message</span> 
+                                            <span id="spinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                                        </button>
+                                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- Show Django messages -->
+                            {% if messages %}
+                             <ul class="messages">
+                             {% for message in messages %}
+                             <li class="{{ message.tags }}">{{ message }}</li>
+                             {% endfor %}
+                             </ul>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End contact group -->
+
+
+{% endblock %}
+        <!-- Start footer area -->
+
+        <!-- End footer area -->
+
+        <!-- Start Copyright Area -->
+
+        <!-- Start Copyright Area -->
+
+        <!-- Start Go Top Area -->
+
+        <!-- End Go Top Area -->
+
+        <!-- Link off Js Fill -->
+
+        

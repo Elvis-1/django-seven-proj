@@ -1,0 +1,182 @@
+{% extends 'base.html' %}
+{% load static %}
+        <!-- Start Navbar Area --> 
+
+
+            <!-- Menu For Desktop Device -->
+
+        <!-- End  Navbar Area -->
+
+        {% block content %}
+
+
+
+        <!-- Page banner Area -->
+        <div class="page-banner-area"> 
+            <div class="container-fluid">
+                <div class="page-banner-content"> 
+                    <h1>Our Services</h1>
+                    <p><a href="/index/">Home</a>Our Services</p>  
+                </div> 
+            </div>
+        </div>
+        <!-- End Page banner Area -->
+
+       <!-- Start Services Two area -->
+       <div class="services-item pt-100 pb-70">   
+        <div class="container">
+            <div class="provided-content">   
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="section-title">
+                            <span class="top-title">SERVICES WE PROVIDE</span>
+                            <h2>What we do</h2> 
+                        </div>  
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="button">
+                            <a href="{%  url 'services' %}" class="default-btn">All Services<i class="flaticon-next"></i></a>  
+                        </div>  
+                    </div>
+                </div>
+            </div> 
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="services-card">
+                        <i class="flaticon-analysis analysis-icon-two"></i>  
+                        <h2>
+                            <a href="services">Real Estate Development</a>
+                        </h2> 
+                        <p>As a real estate development firm, we are involved in construction and development processes from start to finish by providing real estate development solutions to our clients. </p>
+                         
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="services-card">
+                        <i class="flaticon-investment analysis-icon-two"></i>  
+                        <h2>
+                            <a href="services">Real Estate Management</a>
+                        </h2>  
+                        <p>Investments without proper monitoring and management are simply nothing but waste – literally throwing away hard earned resources into the winds.</p>
+                        >  
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="services-card">
+                        <i class="flaticon-life-insurance analysis-icon-two"></i>  
+                        <h2>
+                            <a href="services">Real Estate Marketing</a>
+                        </h2>  
+                        <p>We have a well structured real estate marketing system and platform that is one of the best if not the best in the country. We are always on track.</p>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="services-card">
+                        <i class="flaticon-fluctuation analysis-icon-two"></i>  
+                        <h2>
+                            <a href="services">Land Survey</a>
+                        </h2> 
+                        <p>Our primary role is to determine the boundary of real properties and establish the registered survey copy of the land in question.We offer a comprehensive range of land surveying services.</p>
+                         
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="services-card">
+                        <i class="flaticon-artificial-intelligence analysis-icon-two"></i>  
+                        <h2>
+                            <a href="services">
+                                Seminars and Trainings</a>
+                        </h2>  
+                        <p>We conduct seminars and trainings relating to real estate and information marketing. We use such seminars to educate the public on the need for them to own properties and develop these properties.</p>
+                         
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="services-card"> 
+                        <i class="flaticon-cloud analysis-icon-two"></i>   
+                        <h2>
+                            <a href="services">Consultancy</a>
+                        </h2>  
+                        <p>Our consultancy offers quality, transparent choices, both in the types of services that you can receive and how those services can be paid for. We consult for various aspects of real estate business</p>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Services Two area -->
+
+
+
+        
+        <!-- Start make an appointment -->
+        <div class="appointment-area">
+            <div class="container">
+                <div class="appointment-item appointment-two">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="appointment-img">
+                                <img src="{% static 'assets/images/apartment.png' %} " alt="Images">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <form class="appointment-form">
+                                <div class="section-title">
+                                    <h2>Make an Appointment</h2>
+                                    <p></p> 
+                                </div>
+                                <div class="make-from">
+                                    <div class="row"> 
+                                        <div class="col-lg-6 col-lmd-6"> 
+                                            <div class="mb-3"> 
+                                                <input type="text" class="form-control" id="names" placeholder="Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-lmd-6"> 
+                                            <div class="mb-3"> 
+                                                <input type="text" class="form-control" id="emails" placeholder="Phone"> 
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12"> 
+                                            <div class="mb-3"> 
+                                                <input type="email" class="form-control" id="phones" placeholder="Email"> 
+                                            </div>
+                                        </div>
+                                        <div class="col-llg-12 col-md-12"> 
+                                            <div class="mb-3">
+                                                <textarea class="form-control" id="textMessage" placeholder="Message" rows="5"></textarea> 
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12">
+                                            <button type="submit" class="default-btn"> 
+                                                Submit Now <i class="flaticon-next"></i> 
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End make an appointment --> 
+
+
+
+      {% endblock %}
+        <!-- Start footer area -->
+
+        <!-- End footer area -->
+
+        <!-- Start Copyright Area -->
+
+        <!-- Start Copyright Area -->
+
+        <!-- Start Go Top Area -->
+
+        <!-- End Go Top Area -->
+
+        <!-- Link off Js Fill -->
+

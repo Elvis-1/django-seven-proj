@@ -1,0 +1,113 @@
+
+{%load static%}
+<div class="navbar-area">      
+    <!-- Menu For Mobile Device -->
+    <div class="container"> 
+        <div class="mobile-nav"> 
+            <div class="logo">
+                <a href="index.html"> 
+                    <img src="{% static 'assets/images/logo.png'%}" class="black-logo" alt="Images">
+                    <img src="{% static 'assets/images/fotter-logo.png'%}" class="white-logo" alt="images">   
+                </a> 
+            </div>
+        </div> 
+    </div>
+
+    <!-- Menu For Desktop Device -->
+    <div class="main-nav">         
+        <div class="container-fluid">    
+            <nav class="navbar navbar-expand-md navbar-light">   
+
+                <a href="index.html">   
+                    <img src="{% static '/assets/images/logo.png'%}" class="black-logo" alt="Images">  
+                    <img src="{% static '/assets/images/fotter-logo.png'%}" class="white-logo" alt="images">   
+                </a>   
+
+                <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent"> 
+                    <ul class="navbar-nav ms-auto">  
+                        <li class="nav-item"> 
+                            <a href="{% url 'index' %}" class=" active">Home</a>
+                        </li>  
+
+                        <li class="nav-item"> 
+                            <a href="#" class="nav-link dropdown-toggle">PWAN Xtra</a>     
+                            
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="{% url 'about' %}" class="nav-link">About Us</a>         
+                                </li>
+                            </ul>  
+
+                        </li> 
+
+                        <li class="nav-item"> 
+
+                            <a href="{% url 'services' %}" class="nav-link ">SERVICES</a>   
+                        </li>   
+
+                        <li class="nav-item"> 
+
+                           <a href="#" class="nav-link dropdown-toggle">ESTATES</a>   
+                            
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="{% url 'isura' %}" class="nav-link">Isura Phase 2</a>              
+                                </li> 
+                                <li class="nav-item">
+                                    <a  href="{% url 'ngozi' %}"  class="nav-link">Ngozi</a>              
+                                </li> 
+                                <li class="nav-item">
+                                    <a  href="{% url 'ikenga' %}"   class="nav-link">Ikenga</a>              
+                                </li> 
+                                
+                                <li class="nav-item">
+                                    <a  href="{% url 'nkem' %}" class="nav-link">Nkem</a>              
+                                </li> 
+                                
+                                <li class="nav-item">
+                                    <a  href="{% url 'Aku' %}" class="nav-link">Aku</a>              
+                                </li> 
+                                <li class="nav-item">
+                                    <a  href="{% url 'AkaEzePhase2' %}" class="nav-link">AkaEze Phase 2</a>              
+                                </li> 
+                                <li class="nav-item">
+                                    <a  href="{% url 'ileri' %}" class="nav-link">Ileileri</a>              
+                                </li> 
+                                <li class="nav-item">
+                                    <a  href="{% url 'IleAyo3' %}" class="nav-link">Ile Ayo Phase 3</a>              
+                                </li> 
+                                <li class="nav-item">
+                                    <a href="{% url 'Enyiaba2' %}" class="nav-link">Enyiaba Phase 2</a>              
+                                </li> 
+                            </ul>
+                        </li>   
+                        <li class="nav-item">  
+                            <a  href="{% url 'soldout' %}" class="nav-link">SOLD OUT ESTATES</a>       
+                        </li> 
+                        <li class="nav-item">  
+                            <a href="{% url 'contact' %}" class="nav-link">CONTACT</a>       
+                        </li> 
+                    </ul> 
+
+                    <div class="others-options-vgs d-flex align-items-center">
+
+                    
+
+                        <div class="option-item">
+                           
+                        </div>
+
+                        <div class="option-item">
+                        
+                        </div>
+                    </div>
+                </div>
+            </nav> 
+        </div>
+    </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>      
+</div> 
